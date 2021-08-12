@@ -1,9 +1,12 @@
 import styled from 'styled-components'
+import fire from '../../../assets/fire.jpg'
 const StyledCount = styled.div`
   color: white;
   padding: 1.5rem 1rem;
   position: relative;
   border-bottom: 1px solid rgb(238, 238, 238);
+  background-image: url(${fire});
+  /* background-position: top right; */
   &::after {
     content: '';
     position: absolute;
@@ -26,21 +29,24 @@ const StyledCount = styled.div`
     line-height: .8;
     font-size: 180%;
     margin-bottom: .5rem;
+    font-weight: bolder;
     color: rgb(9, 165, 111);
   }
-  p {
-    color: #333;
-  }
+
   span {
     color: rgb(235, 177, 20);
     font-weight: 600;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `
 const Count = () => {
 return (
 <StyledCount>
   <h1>Make this <br /> order count</h1>
-  <p>Sign into your <span>CLUB BAJA REWARDS</span> to earn points & use rewards</p>
+  <p>Sign into your <span>CLUB BAJA REWARDS</span> <br /> to earn points & use rewards</p>
 </StyledCount>
 )
 }

@@ -1,36 +1,50 @@
 import styled from 'styled-components'
-import { FiEdit3 } from "react-icons/fi";
+import { AiOutlineRight } from 'react-icons/ai'
+import { FiEdit2 } from 'react-icons/fi'
 
 const StyledStart = styled.div`
-padding: .75rem 1rem;
-border-bottom: 1px solid rgb(238, 238, 238);
-  button {
-    background: none;
-    border: none;
-    font-size: 92%;
-    display: flex;
-    align-items: center;
-    svg {
-      font-size: 1.2rem;
-      margin-left: .25em;
+	padding: .75rem 1rem;
+	border-bottom: 1px solid rgb(238, 238, 238);
+	button {
+		background: none;
+		border: none;
+		font-size: 92%;
+		display: flex;
+		align-items: center;
+		padding: 4px 0;
+		cursor: pointer;
+		&:first-of-type:hover {
+			color: var(--brandGreen);
+		}
+    &:last-of-type:hover {
+      span, svg {
+        color: var(--brandRed);
+      }
     }
-  }
-  span {
-    font-weight: 600;
-  }
+
+		svg {
+			font-size: .9rem;
+			margin-left: .3em;
+		}
+	}
+	span {
+		font-weight: 600;
+	}
 `
 const Start = () => {
-return (
-<StyledStart>
-  <button>
-    <div>Start a new order</div>
-    <FiEdit3 />
-  </button>
-  <button>
-    <div>from<span> Miracle Mile</span></div>
-    <FiEdit3 />
-  </button>
-</StyledStart>
-)
+	return (
+		<StyledStart>
+			<button>
+				<div>Start a new order</div>
+				<AiOutlineRight />
+			</button>
+			<button>
+				<div>
+					from<span> Miracle Mile</span>
+				</div>
+				<FiEdit2 />
+			</button>
+		</StyledStart>
+	)
 }
 export default Start
