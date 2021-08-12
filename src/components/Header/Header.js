@@ -7,7 +7,7 @@ import Menu from "./Menu/Menu";
 import Overlay from "./Overlay/Overlay";
 import useOnClickOutside from 'use-onclickoutside'
 
-const StyledHeader = styled.div`
+const StyledHeader = styled.header`
   height: 60px;
   display: flex;
   grid-template-columns: auto 1fr auto;
@@ -20,11 +20,13 @@ const StyledHeader = styled.div`
   top: 0;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 8px 0px;
+  z-index: 10;
   #logo {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    z-index: 10;
     img {
       max-width: 176px;
     }

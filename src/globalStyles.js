@@ -15,8 +15,8 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-:root {
-
+main {
+	margin-top: 60px;
 }
 svg {
 	font-size: 138%;
