@@ -32,7 +32,7 @@ const StyledMenu = styled.div`
     padding: 0 0.5rem;
 		width: 100%;
 		@media (min-width: 640px) {
-			max-width: 50%;
+			max-width: 40%;
 
 		}
     input[type="search"] {

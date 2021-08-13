@@ -60,7 +60,7 @@ const StyledLinks = styled.div`
 		li {
 			margin-bottom: 1.5rem;
 			font-weight: 500;
-			border-bottom: 2px solid black;
+			border-bottom: 2px solid #333333c5;
 			width: min-content;
 			white-space: nowrap;
 			cursor: pointer;
@@ -71,7 +71,7 @@ const StyledLinks = styled.div`
 	}
 	span {
 		font-weight: 500;
-		border-bottom: 2px solid black;
+		border-bottom: 2px solid #333333c5;
 		cursor: pointer;
     &:hover {
         color: var(--brandGreen);

@@ -7,6 +7,12 @@ const StyledStart = styled.div`
 	border-bottom: 1px solid rgb(238, 238, 238);
 	color: inherit;
 	background-color: white;
+	@media (min-width: 768px) {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		font-size: 110%;
+	}
 	button {
 		background: none;
 		color: inherit;

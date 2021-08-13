@@ -4,6 +4,12 @@ const StyledMiracle = styled.div`
 	padding-bottom: 1.75rem;
 	border-bottom: 1px solid rgb(238, 238, 238);
 	background-color: white;
+	@media (min-width: 768px) {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
 	h2 {
 		font-weight: 500;
 	}

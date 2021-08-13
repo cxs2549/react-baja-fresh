@@ -7,6 +7,7 @@ const StyledCount = styled.div`
   border-bottom: 1px solid rgb(238, 238, 238);
   background-image: url(${fire});
   /* background-position: top right; */
+
   &::after {
     content: '';
     position: absolute;
@@ -31,8 +32,16 @@ const StyledCount = styled.div`
     margin-bottom: .5rem;
     font-weight: bolder;
     color: rgb(9, 165, 111);
+    @media (min-width: 768px) {
+      font-size: 240%;
+      margin-bottom: 1rem;
+    }
   }
-
+  p {
+    @media (min-width: 768px) {
+      font-size: 140%;
+    }
+  }
   span {
     color: rgb(235, 177, 20);
     font-weight: 600;

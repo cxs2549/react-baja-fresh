@@ -14,6 +14,9 @@ const StyledSection = styled.div`
       h1 {
         font-size: 140%;
         text-transform: capitalize;
+        @media (min-width: 768px) {
+          font-size: 160%;
+        }
       }
       span {
         font-size: 92%;
@@ -26,6 +29,9 @@ const StyledSection = styled.div`
       border-bottom: 2px solid #333333c5;
       font-size: 94%;
       color: inherit;
+      &:hover {
+        color: var(--brandGreen);
+      }
     }
   }
   #cards {
