@@ -3,17 +3,18 @@ const StyledMiracle = styled.div`
 	padding: 1rem;
 	padding-bottom: 1.75rem;
 	border-bottom: 1px solid rgb(238, 238, 238);
+	background-color: white;
 	h2 {
 		font-weight: 500;
 	}
 	> div:first-of-type {
 		margin-top: .75rem;
 		a {
-			color: black;
+			color: inherit;
 			text-decoration: none;
 			font-weight: 500;
-			border-bottom: 2px solid black;
-			margin-right: .75em;
+			border-bottom: 2px solid #333333c5;
+			margin-right: 1em;
 			&:first-of-type:hover {
 				color: var(--brandGreen);
 			}

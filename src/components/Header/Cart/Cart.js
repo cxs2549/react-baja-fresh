@@ -12,6 +12,11 @@ const StyledCart = styled.div`
     background-color: white;
     z-index: 11;
     transition: right 400ms;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+    @media (min-width: 768px) {
+        right: ${props => (props.open ? 0 : '-200%')};
+        max-width: 40%;
+    }
     #header {
         height: 60px;
         padding: 0 1rem;
@@ -30,12 +35,15 @@ const StyledCart = styled.div`
         align-items: center;
         margin-top: 16%;
         padding: 0 1rem;
+        h2 {
+            font-size: 130%;
+        }
         svg {
             font-size: 3rem;
             margin-bottom: .5rem;
         }
         button {
-            background-color: #DF2618;
+            background-color: var(--brandRed);
             color: white;
             font-weight: bold;
             display: inline-block;

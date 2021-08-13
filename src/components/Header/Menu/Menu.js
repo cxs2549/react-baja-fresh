@@ -8,10 +8,14 @@ const StyledMenu = styled.div`
 	height: 100vh;
 	background-color: #fff;
 	transition: left 400ms;
+	transition-delay: 200ms;
 	box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
 	z-index: 12;
 	display: flex;
 	flex-flow: column;
+	@media (min-width: 768px) {
+		display: none;
+	}
 	#header {
 		height: 60px;
 		display: flex;

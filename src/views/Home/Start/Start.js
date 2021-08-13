@@ -5,8 +5,11 @@ import { FiEdit2 } from 'react-icons/fi'
 const StyledStart = styled.div`
 	padding: .75rem 1rem;
 	border-bottom: 1px solid rgb(238, 238, 238);
+	color: inherit;
+	background-color: white;
 	button {
 		background: none;
+		color: inherit;
 		border: none;
 		font-size: 92%;
 		display: flex;

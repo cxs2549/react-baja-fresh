@@ -12,7 +12,7 @@ const StyledHome = styled.div`
 const Home = () => {
   
   return (
-    <StyledHome>
+    <StyledHome className='globalWidth'>
       <Start />
       <Miracle />
       <Count />

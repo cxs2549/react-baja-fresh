@@ -18,17 +18,24 @@ body {
 		'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	color: #333;
+	background-color: rgb(252, 252, 252);
 }
 
 .modal-open {
 	overflow: hidden;
 }
 
-main {
-	margin-top: 60px;
+.globalWidth {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+svg, button {
+	cursor: pointer;
 }
 svg {
-	font-size: 138%;
+	font-size: 140%;
 	cursor: pointer;
 }
 

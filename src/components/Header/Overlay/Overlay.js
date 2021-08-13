@@ -7,7 +7,9 @@ const StyledOverlay = styled.div`
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   visibility: ${(props) => (props.open ? "visible" : "hidden")};
+  opacity: ${(props) => (props.open ? 1 : 0)};
   z-index: 10;
+  transition: all 500ms;
 `;
 const Overlay = ({ open, close }) => {
   return <StyledOverlay open={open} onClick={close}></StyledOverlay>;

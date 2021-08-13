@@ -24,7 +24,23 @@ const data = [
 			price: 11.99,
 			cals: 750,
 			desc: 'Baja rice topped with roasted veggies, delicious Impossible meat made...'
-		}
+		},
+		{
+			id: 2.2,
+			image: card1,
+			name: 'fuego impossible burrito',
+			price: 11.99,
+			cals: 750,
+			desc: 'Baja rice topped with roasted veggies, delicious Impossible meat made...'
+		},
+		{
+			id: 2.3,
+			image: card2,
+			name: 'impossible Taco',
+			price: 11.99,
+			cals: 750,
+			desc: 'Baja rice topped with roasted veggies, delicious Impossible meat made...'
+		},
 	],
 	[
 		{
